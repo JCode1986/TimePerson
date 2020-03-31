@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -18,14 +19,21 @@ namespace Lab11_TimePerson.Models
 		public string Context { get; set; }
         public static List<TimePerson> GetPersons(int startYear, int endYear)
         {
-            // create a list of Time persons (instantiate a new list)
-            // get the path of your timeperson.csv file
-            // getting the path is not as simple as ../../../ have to use 
-            // the Path or Environment class
+            //get the path of your timeperson.csv file
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../wwwroot/TimePerson.csv");
 
-            // once you get the file path, 
+            // create a list of Time persons (instantiate a new list)
+            List<TimePerson> personsList = new List<TimePerson>();
+
             // read all the lines and save it into an array of strings
+            var lines = File.ReadAllLines(path);
+
             // traverse through the strings for each line item
+            foreach (string line in lines)
+            {
+                Console.WriteLine(line);
+            }
+
             // remember CSV is delimited by commas. 
 
             // use LINQ to filter out with the years that you brought in against your list of persons
