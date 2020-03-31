@@ -1,7 +1,20 @@
 ﻿@model List<Lab11_TimePerson.Models.TimePerson>
-
 <!--Traverse through the Model and output each of the line items in the csv file.-->
 <!--9 columns. output each line item-->
-@*@foreach(var item in Model)
+<!Doctype html>
+
+<head>
+    <title>Results Page</title>
+</head>
+<body>
+    <h1>Times Person</h1>
+    @foreach (var item in Model)
     {
-    }*@
+        <p> 
+            | @item.Year | @item.Honor | @item.Name | @item.Country | @item.BirthYear | @item.DeathYear | @item.Title | @item.Category | @item.Context | 
+        </p>;
+    }
+
+</body>
+
+
