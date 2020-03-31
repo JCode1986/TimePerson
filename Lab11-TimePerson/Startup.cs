@@ -34,7 +34,7 @@ namespace Lab11_TimePerson
             {
                 endpoints.MapControllerRoute(
                     "default",
-                    "{controller=Home/{Action=Index}/{id?}");
+                    "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
