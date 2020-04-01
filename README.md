@@ -34,9 +34,9 @@ Then select and open ```Lab11-TimePerson..sln```
 ### Visuals
 
 #### Application Start
-![Image 1]()
+![Image 1](assets/start.png)
 #### Using the Application
-![Image 1]()
+![Image 1](assets/result.png)
 
 ### Deployed App
 https://lab11-timeperson20200331230759.azurewebsites.net/
