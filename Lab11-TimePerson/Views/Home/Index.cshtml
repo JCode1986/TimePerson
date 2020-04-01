@@ -1,9 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-
+﻿@model List<Lab11_TimePerson.Models.TimePerson>
 <!Doctype html>
 
 <head>
@@ -13,11 +8,12 @@
 </head>
 <body>
     <h1>Time Person</h1>
+    <h2>1927-2016 Archive</h2>
 
 </body>
 
 <form method="post">
-    <input maxlength="4" placeholder="Start Year" name="startYear" /> - 
+    <input maxlength="4" placeholder="Start Year" name="startYear" /> -
     <input maxlength="4" placeholder="End Year" name="endYear" />
     <button type="submit">Submit</button>
 </form>
