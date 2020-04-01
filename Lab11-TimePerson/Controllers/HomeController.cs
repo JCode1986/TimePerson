@@ -44,6 +44,7 @@ namespace Lab11_TimePerson.Controllers
         public IActionResult Results(int startYear, int endYear)
         {
             return View(TimePerson.GetPersons(startYear, endYear));
+
         }
     }
 }

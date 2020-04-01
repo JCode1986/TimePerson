@@ -5,41 +5,21 @@
 
 <head>
     <title>Results Page</title>
-    <link rel="stylesheet" href="~/styles/StyleSheet.css" type="text/css" />
+    <link rel="stylesheet" href="~/Styles/StyleSheet.css" />
 </head>
 <body>
-    <h1>Times Person</h1>
-
-    @foreach (var item in Model)
-    {
-        <div>
-            <table>
-                <tr>
-                    <th>Year</th>
-                    <th>Honor</th>
-                    <th>Name</th>
-                    <th>Country</th>
-                    <th>Birth Year</th>
-                    <th>Death Year</th>
-                    <th>Title</th>
-                    <th>Category</th>
-                    <th>Context</th>
-                </tr>
-                <tr>
-                    <td>@item.Year</td>
-                    <td>@item.Honor</td>
-                    <td>@item.Name</td>
-                    <td>@item.Country</td>
-                    <td>@item.BirthYear</td>
-                    <td>@item.DeathYear</td>
-                    <td>@item.Title</td>
-                    <td>@item.Category</td>
-                    <td>@item.Context </td>
-                </tr>
-            </table>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Times Person</h1>
+            @foreach (var item in Model)
+            {
+                <p>
+                    @item.Year | @item.Year | @item.Year | @item.Honor | @item.Name | @item.Country | @item.BirthYear
+                    @item.Title | @item.Category | @item.Context
+                </p>
+            }
         </div>
-    }
-
+    </div>
 </body>
 
 
