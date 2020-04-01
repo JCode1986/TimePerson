@@ -1,0 +1,12 @@
+﻿h1, h2, form {
+    text-align: center;
+}
+
+body {
+    font: normal medium/1.4 sans-serif;    
+}
+body, html {
+    height: 100%;
+}
+
+
