@@ -7,8 +7,6 @@
 
   <ItemGroup>
     <None Include="wwwroot\assets\hero.jpg" />
-    <None Include="wwwroot\assets\result.png" />
-    <None Include="wwwroot\assets\start.png" />
     <None Include="wwwroot\assets\time.jpg" />
   </ItemGroup>
 
