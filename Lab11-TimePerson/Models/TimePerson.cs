@@ -67,7 +67,7 @@ namespace Lab11_TimePerson.Models
                                 .OrderBy(p => p.Year).ToList();
 
             //return result list
-            return personList;
+            return query;
         }
     }
 
