@@ -8,36 +8,37 @@
     <link rel="stylesheet" href="~/Styles/StyleSheet.css" />
 </head>
 <body>
+    <nav>
+        <a href="/"><img src="~/assets/time.jpg" /></a>
+    </nav>
     <table>
-        <thread>
-            <tr>
-                <td>Year</td>
-                <td>Honor</td>
-                <td>Name</td>
-                <td>Country</td>
-                <td>Birth Year</td>
-                <td>Death Year</td>
-                <td>Title</td>
-                <td>Category</td>
-                <td>Context</td>
-            </tr>
-        </thread>
-    @foreach (var person in Model)
-    {
-    <tbody>
-        <tr>
-            <td>@person.Year</td>
-            <td>@person.Honor</td>
-            <td>@person.Name</td>
-            <td>@person.Country</td>
-            <td>@person.BirthYear</td>
-            <td>@person.DeathYear</td>
-            <td>@person.Title</td>
-            <td>@person.Category</td>
-            <td>@person.Context</td>
+        <tr id="headers">
+            <td>Year</td>
+            <td>Honor</td>
+            <td>Name</td>
+            <td>Country</td>
+            <td>Birth Year</td>
+            <td>Death Year</td>
+            <td>Title</td>
+            <td>Category</td>
+            <td>Context</td>
         </tr>
-    </tbody>
-    }
+        @foreach (var person in Model)
+        {
+            <tbody>
+                <tr>
+                    <td>@person.Year</td>
+                    <td>@person.Honor</td>
+                    <td>@person.Name</td>
+                    <td>@person.Country</td>
+                    <td>@person.BirthYear</td>
+                    <td>@person.DeathYear</td>
+                    <td>@person.Title</td>
+                    <td>@person.Category</td>
+                    <td>@person.Context</td>
+                </tr>
+            </tbody>
+        }
     </table>
 </body>
 
