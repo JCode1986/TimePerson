@@ -27,7 +27,7 @@ Next navigate to the location you cloned the Repository.
 
 Double click on the ```Lab11-TimePerson.``` directory.
 
-Then select and open ```Lab11-TimePerson..sln```
+Then select and open ```Lab11-TimePerson.sln```
 
 ---
 
