@@ -8,18 +8,38 @@
     <link rel="stylesheet" href="~/Styles/StyleSheet.css" />
 </head>
 <body>
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>Times Person</h1>
-            @foreach (var item in Model)
-            {
-                <p>
-                    @item.Year | @item.Year | @item.Year | @item.Honor | @item.Name | @item.Country | @item.BirthYear
-                    @item.Title | @item.Category | @item.Context
-                </p>
-            }
-        </div>
-    </div>
+    <nav>
+        <a href="/"><img src="~/assets/time.jpg" /></a>
+    </nav>
+    <table>
+        <tr id="headers">
+            <td>Year</td>
+            <td>Honor</td>
+            <td>Name</td>
+            <td>Country</td>
+            <td>Birth Year</td>
+            <td>Death Year</td>
+            <td>Title</td>
+            <td>Category</td>
+            <td>Context</td>
+        </tr>
+        @foreach (var person in Model)
+        {
+            <tbody>
+                <tr>
+                    <td>@person.Year</td>
+                    <td>@person.Honor</td>
+                    <td>@person.Name</td>
+                    <td>@person.Country</td>
+                    <td>@person.BirthYear</td>
+                    <td>@person.DeathYear</td>
+                    <td>@person.Title</td>
+                    <td>@person.Category</td>
+                    <td>@person.Context</td>
+                </tr>
+            </tbody>
+        }
+    </table>
 </body>
 
 

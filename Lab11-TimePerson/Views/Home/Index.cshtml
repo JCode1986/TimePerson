@@ -5,15 +5,36 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="~/Styles/StyleSheet.css" />
 </head>
-<body>
-    <div style="background-image: url('../../../assets/hero.jpg');"></div>
-    <h1>Times Person</h1>
-    <h2>1927-2016 Archive</h2>
+<body id="index-body">
+    <div id="wrapper">
+        <nav>
+            <a href="/"><img src="~/assets/time.jpg" /></a>
+        </nav>
+        <h1>Time Person</h1>
+        <h2>Archive (1927-2016)</h2>
+
+        <form method="post">
+
+            <input maxlength="4" placeholder="Start Year" name="startYear" /> -
+            <input maxlength="4" placeholder="End Year" name="endYear" />
+
+            <button type="submit">Submit</button>
+
+        </form>
+        <footer>
+            <div className="footer">
+                <div>
+                    <p>Created by: Joseph Hangarter</p></div>
+                <p>
+                    Contact information: <a href="https://www.linkedin.com/in/joseph-hangarter/" target="_blank">
+                    <img class="logo" src="~/assets/linked_in_logo.png"></a>
+
+                    <a class="logo" href="https://github.com/JCode1986" target="_blank">
+                    <img class="logo" src="assets/github_logo.png"></a>
+                    
+                </p>
+            </div>
+        </footer>
+    </div>
 
 </body>
-
-<form method="post">
-    <input maxlength="4" placeholder="Start Year" name="startYear" /> -
-    <input maxlength="4" placeholder="End Year" name="endYear" />
-    <button type="submit">Submit</button>
-</form>
