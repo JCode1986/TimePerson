@@ -34,7 +34,7 @@ Then select and open ```Lab11-TimePerson.sln```
 ### Visuals
 
 #### Application Start
-![Image 1]()
+![Image 1](images/home.png)
 #### Using the Application
 ![Image 1](images/results.png)
 
