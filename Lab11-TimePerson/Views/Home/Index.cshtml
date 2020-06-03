@@ -16,26 +16,32 @@
         <form method="post">
 
             <label for="startYear">Start Year:</label>
-            <input type="number" id="startYear" name="startYear" min="1927" max="2015">
+            <input type="number" id="startYear" name="startYear" placeholder="1927" min="1927" max="2015" required>
 
             <label for="EndYear">End Year:</label>
-            <input type="number" id="EndYear" name="EndYear" min="1928" max="2016">
+            <input type="number" id="EndYear" name="EndYear" placeholder="1928" min="1928" max="2016" required>
 
             <button type="submit">Submit</button>
 
         </form>
         <footer>
-            <div className="footer">
+            <div className="footer" style="display: inline-flex">
                 <div>
-                    <p>Created by: Joseph Hangarter</p></div>
-                <p>
-                    Contact information: <a href="https://www.linkedin.com/in/joseph-hangarter/" target="_blank">
-                    <img class="logo" src="~/assets/linked_in_logo.png"></a>
-
-                    <a class="logo" href="https://github.com/JCode1986" target="_blank">
-                    <img class="logo" src="assets/github_logo.png"></a>
-                    
-                </p>
+                    <p>Created by: Joseph Hangarter</p>
+                </div>
+                <ul>
+                    <li>Contact information:</li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/joseph-hangarter/" target="_blank">
+                            <img class="logo" src="~/assets/linked_in_logo.png" style="padding-left: 7px">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="logo" href="https://github.com/JCode1986" target="_blank">
+                            <img class="logo" src="assets/github_logo.png" style="padding-left: 7px">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </footer>
     </div>

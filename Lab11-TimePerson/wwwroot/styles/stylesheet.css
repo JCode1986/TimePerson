@@ -6,6 +6,11 @@ body {
     font-family: 'Arial';
 }
 
+ul {
+    display: inline-flex;
+    list-style: none;
+}
+
 #index-body {
     font-family: 'Arial';
     background-image: url('../assets/times.jpg');
@@ -16,7 +21,7 @@ body {
     padding-top: 10px;
     border: 2px solid;
     padding-bottom: 40px;
-    background-color: lightblue;
+    background-color: aliceblue;
     border-radius: 205px 205px 205px 205px;
     width: 630px;
     margin: auto;
@@ -80,8 +85,8 @@ footer {
 }
 
 .logo {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 .footer {
