@@ -15,8 +15,11 @@
 
         <form method="post">
 
-            <input maxlength="4" placeholder="Start Year" name="startYear" /> -
-            <input maxlength="4" placeholder="End Year" name="endYear" />
+            <label for="startYear">Start Year:</label>
+            <input type="number" id="startYear" name="startYear" min="1927" max="2015">
+
+            <label for="EndYear">End Year:</label>
+            <input type="number" id="EndYear" name="EndYear" min="1928" max="2016">
 
             <button type="submit">Submit</button>
 
