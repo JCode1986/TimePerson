@@ -15,6 +15,10 @@ ul {
     font-family: 'Arial';
     background-image: url('../assets/times.jpg');
     margin-top: 12%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #wrapper {

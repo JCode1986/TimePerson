@@ -29,8 +29,16 @@ namespace Lab11_TimePerson.Controllers
         [HttpPost]
         public IActionResult Index(int startYear, int endYear)
         {
-            // To redirect to our results action with the "results" of our query
-            return RedirectToAction("Results", new { startYear, endYear });
+
+            if (startYear <= endYear)
+            {
+                // To redirect to our results action with the "results" of our query
+                return RedirectToAction("Results", new { startYear, endYear });
+            }
+            else
+            {
+                return View();
+            }
         }
 
         /// <summary>
@@ -44,7 +52,6 @@ namespace Lab11_TimePerson.Controllers
         public IActionResult Results(int startYear, int endYear)
         {
             return View(TimePerson.GetPersons(startYear, endYear));
-
         }
     }
 }
