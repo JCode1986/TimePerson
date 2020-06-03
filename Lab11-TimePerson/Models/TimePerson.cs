@@ -65,7 +65,7 @@ namespace Lab11_TimePerson.Models
             var query = personList
                                 .Where(p => p.Year >= startYear && p.Year <= endYear)
                                 .OrderBy(p => p.Year).ToList();
-
+            
             //return result list
             return query;
         }
