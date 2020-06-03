@@ -70,5 +70,4 @@ namespace Lab11_TimePerson.Models
             return query;
         }
     }
-
 }
