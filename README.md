@@ -1,8 +1,4 @@
-# My-First-MVC-App
-
-## Times Person
-
-Lab11
+# Times Person
 
 *Author: Joseph Hangarter*
 
