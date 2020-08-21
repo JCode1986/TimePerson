@@ -1,4 +1,4 @@
-# Times Person
+# Time Person
 
 *Author: Joseph Hangarter*
 
