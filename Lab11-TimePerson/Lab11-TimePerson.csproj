@@ -10,15 +10,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\assets\hero.jpg" />
-    <None Include="wwwroot\assets\time.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
   </ItemGroup>
+
+  <Target Name="PrePublishTarget" BeforeTargets="PrepareForPublish" Condition="$(DOTNET_RUNNING_IN_CONTAINER) != 'true'">
+    <Exec Command="npm install" />
+    <Exec Command="npm run build" />
+    <ItemGroup>
+      <Dist Include="../../build/**" />
+    </ItemGroup>
+    <Copy SourceFiles="@(Dist)" DestinationFolder="$(PublishDir)\wwwroot\%(RecursiveDir)" SkipUnchangedFiles="true" />
+  </Target>
 
   <PropertyGroup>
     <NoWarn>$(NoWarn);NU1701</NoWarn>
