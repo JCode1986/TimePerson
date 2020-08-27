@@ -1,14 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Lab11_TimePerson.Models;
+﻿using Lab11_TimePerson.Models;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using System.IO;
 
 namespace Lab11_TimePerson.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IWebHostEnvironment _hostingEnvironment;
+
+        public HomeController (IWebHostEnvironment environment)
+	    {
+            _hostingEnvironment = environment;
+	    }
+
         /// <summary>
         /// Default home route for home page
         /// </summary>
@@ -16,6 +21,13 @@ namespace Lab11_TimePerson.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            Path.Combine(_hostingEnvironment.WebRootPath, "Sample.PNG");
             return View();
         }
 
